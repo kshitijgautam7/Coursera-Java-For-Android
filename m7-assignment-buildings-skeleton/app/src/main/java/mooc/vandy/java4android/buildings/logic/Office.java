@@ -40,7 +40,11 @@ public class Office
     public int getParkingSpaces() {
         return mParkingSpaces;
     }
-
+       
+    public static int getTotalOffices() {    //We have to get a corresponding public static accessor method getTotalOffices(), but it does not have a mutator method setTotalOffices()
+        return sTotalOffices;
+    }
+       
     //setters
     public void setBusinessName(String businessName) {
         this.mBusinessName = businessName;
